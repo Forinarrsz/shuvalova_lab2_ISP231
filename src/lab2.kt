@@ -1,5 +1,6 @@
 fun main(){
     //лабораторная работа
+    /*
     println("hello,world")
     println("enter first num")
     val num1 = readln().toInt()
@@ -82,12 +83,13 @@ fun main(){
         println("Легенда. Получаете +100hp")
     }
 
+
     //2
     val age2 = readln().toInt()
     if (age2 < 12) {
         println("you`re children")
     }
-    else if (age >= 12 && age <= 17){
+    else if (age2 >= 12 && age2 <= 17){
         println("you`re teenager")
     }
     else {
@@ -95,6 +97,49 @@ fun main(){
     }
 
     //3
+    val chisla = readln().toInt()
+    if (chisla in 10..50){
+        println("yes")
+    }
+    else {
+        println("no")
+    }
 
 
+    //4
+    val input = readln()
+    if (input.length == 1) {
+        when(input[0]) {
+            in 'a'..'z' -> {
+                println("это буква")
+            }
+            in 'A'..'Z' -> {println("это буква")}
+            in '0'..'9' -> {println("это цифра")}
+            ' ' -> {println("это пробел")}
+            else -> {println("Это символ")}
+
+
+        }
+    }
+    */
+    //5
+    repeat(11){
+        i ->
+        println("5 * ${i} = ${5*(i)}")
+    }
+    //6
+    val films = listOf("Властелин Колец", "голодные игры", "форсаж", "гарри поттер", "джунгли", "носители")
+    for (i in films){
+        println(i)
+        println(i.length)
+    }
+
+//7
+    println("укажи имя: ")
+    val name7 = readln()
+    println("укажи возраст:")
+    val age7 = readln().toInt()
+    println("укажи цвет: ")
+    val clr = readln()
+    println("Привет, ${name7}! Тебе ${age7} лет и ты любишь ${clr} цвет")
 }
