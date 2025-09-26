@@ -24,7 +24,7 @@ fun main(){
 
     println("ведите урон")
     val damage = readln().toInt()
-    println("щит активен?")
+    println("щит активен? ")
     val shield = readln().lowercase()
     while (shield == "да") {
         val damage = damage / 2
@@ -73,11 +73,11 @@ fun main(){
     bukva += 10
     println(++bukva)
     println(--bukva)
-    var bukva2 = bukva+1
-    var bukva3 = bukva2-2
+    val bukva2 = bukva+1
+    val bukva3 = bukva2-2
     println(bukva3)
     println(chhr)
-
+/*
     println('a'<'c')
     println('X'>='Z')
     println('z'=='z')
@@ -96,6 +96,9 @@ fun main(){
     val proverka3 = cap.isLowerCase()
     val proverka4 =small.uppercase()
     val proverka5 = small.uppercaseChar()
+
+    */
+
     //самостоятельные задания
     //1
     println("enter your level")
@@ -151,7 +154,7 @@ fun main(){
     //5
     repeat(11){
         i ->
-        println("5 * ${i} = ${5*(i)}")
+        println("5 * $i = ${5*(i)}")
     }
     //6
     val films = listOf("Властелин Колец", "голодные игры", "форсаж", "гарри поттер", "джунгли", "носители")
@@ -167,5 +170,5 @@ fun main(){
     val age7 = readln().toInt()
     println("укажи цвет: ")
     val clr = readln()
-    println("Привет, ${name7}! Тебе ${age7} лет и ты любишь ${clr} цвет")
+    println("Привет, ${name7}! Тебе $age7 лет и ты любишь $clr цвет")
 }
