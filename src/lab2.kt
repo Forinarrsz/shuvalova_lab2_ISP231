@@ -1,6 +1,6 @@
 fun main(){
     //лабораторная работа
-    /*
+
     println("hello,world")
     println("enter first num")
     val num1 = readln().toInt()
@@ -64,11 +64,38 @@ fun main(){
         val ch = '\u0040'
         println(ch)
         */
+    val chr = 'f'
+    println(chr.code)
+    val cifra = 78
+    println(cifra.toChar())
+    val chhr: Char = readln().first()
+    var bukva = 'f'
+    bukva += 10
+    println(++bukva)
+    println(--bukva)
+    var bukva2 = bukva+1
+    var bukva3 = bukva2-2
+    println(bukva3)
+    println(chhr)
+
+    println('a'<'c')
+    println('X'>='Z')
+    println('z'=='z')
+    println('x'!='X')
+    println('X'<'x')
 
 
+    val one = '1'
 
-
-
+    val isdigit = one.isDigit()
+    val isletter = one.isLetter()
+    val cap = 'F'
+    val small = 'q'
+    val proverka1 = cap.isLetterOrDigit()
+    val proverka2 = cap.isUpperCase()
+    val proverka3 = cap.isLowerCase()
+    val proverka4 =small.uppercase()
+    val proverka5 = small.uppercaseChar()
     //самостоятельные задания
     //1
     println("enter your level")
@@ -107,9 +134,8 @@ fun main(){
 
 
     //4
-    val input = readln()
-    if (input.length == 1) {
-        when(input[0]) {
+    val input = readln().first()
+        when(input) {
             in 'a'..'z' -> {
                 println("это буква")
             }
@@ -119,9 +145,9 @@ fun main(){
             else -> {println("Это символ")}
 
 
-        }
+
     }
-    */
+
     //5
     repeat(11){
         i ->
